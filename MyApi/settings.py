@@ -131,7 +131,7 @@ REST_FRAMEWORK = {
         # 'rest_framework.permissions.IsAuthenticated',
         'rest_framework.permissions.AllowAny',
     ],
-    'USER_DETAILS_SERIALIZER': 'userapp.serializer.UserDetailsSerializer',
+    
     'TEST_REQUEST_RENDERER_CLASSES': [
         'rest_framework.renderers.MultiPartRenderer',
         'rest_framework.renderers.JSONRenderer',
@@ -145,6 +145,10 @@ REST_FRAMEWORK = {
         'first_app': '4/day'
     }
 
+}
+
+REST_AUTH_SERIALIZERS = {
+    'USER_DETAILS_SERIALIZER': 'userapp.serializer.UserDetailsSerializer'
 }
 
 CACHES = {
